@@ -18,5 +18,8 @@ async def on_message(message):
 
     if message.content.startswith('$hello'):
         await message.channel.send('Hello!')
+	
+	if message.content.startswith('$ehco'):
+		await message.channel.send(message.content[6:])
 
 client.run(tok)
