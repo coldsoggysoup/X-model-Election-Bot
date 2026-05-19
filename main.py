@@ -1,4 +1,5 @@
 import discord
+import election as elect
 
 tok = str(open('tok.txt').read())
 intents = discord.Intents.default()
