@@ -26,10 +26,10 @@ async def on_message(message):
 	if message.content.startswith('$hello'):
 		await message.channel.send('Hello!')
 	
-	if message.content.startswith('$echo'):
+	if message.content.startswith('$echo '):
 		await message.channel.send(message.content[6:])
 	
-	if message.content.startswith('$echod'):
+	if message.content.startswith('$echod '):
 		await message.delete()
 		await message.channel.send(message.content[6:])
 
