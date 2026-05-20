@@ -46,7 +46,7 @@ class Election:
 					total = total + i["votes"].sum(round)
 					sums.append({"n": i["name"], "v": i["votes"].sum(round)})
 			for i in sums:
-				print(f"{i["n"]}: {i["v"]} | {i["v"]/total}")
+				print(f'{i["n"]}: {i["v"]} | {i["v"]/total}')
 
 	def drop(self,name,role):
 		R = getRole(role)
